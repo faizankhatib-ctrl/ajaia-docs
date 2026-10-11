@@ -560,5 +560,6 @@ init_db()
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    print(f"Starting Ajaia Docs Flask Backend on port {port}...")
-    app.run(host="0.0.0.0", port=port, debug=True)
+    is_debug = os.environ.get("FLASK_DEBUG", "0").lower() in ("1", "true")
+    print(f"Starting Ajaia Docs Flask Backend on port {port} (debug={is_debug})...")
+    app.run(host="0.0.0.0", port=port, debug=is_debug, use_reloader=is_debug)

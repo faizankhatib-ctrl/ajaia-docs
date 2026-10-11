@@ -1,5 +1,13 @@
 # Ajaia Docs — Collaborative Document Editor
 
+## Live Demo
+
+**Live Application:** [Ajaia Docs](https://ajaia-docs-qwnj.onrender.com/)
+
+**API Health Check:** [Check API Status](https://ajaia-docs-qwnj.onrender.com/api/health)
+
+Ajaia Docs is a document management application with rich-text editing, autosave, document sharing, and permission-based access.
+
 > **AI-Native Full Stack Developer Assignment** for **Ajaia LLC**  
 > A polished, lightweight collaborative document editor inspired by Google Docs, built with React, TipTap, Python Flask, and SQLite.
 

@@ -151,17 +151,27 @@ The backend supports the following optional environment variables:
 
 ## 🚢 Deployment Instructions
 
-### Option 1: Render / Railway / Fly.io (Recommended)
+### Live Production Deployment
+- **Live URL**: [https://ajaia-docs-qwnj.onrender.com](https://ajaia-docs-qwnj.onrender.com)
+- **API Health**: [https://ajaia-docs-qwnj.onrender.com/api/health](https://ajaia-docs-qwnj.onrender.com/api/health)
+
+### Render Configuration
 1. **Build Command**:
    ```bash
    cd frontend && npm install && npm run build && cd ../backend && pip install -r requirements.txt
    ```
 2. **Start Command**:
    ```bash
-   python backend/app.py
+   gunicorn --bind 0.0.0.0:$PORT backend.app:app
    ```
-3. Set environment variable `PORT=5000` (or leave default assigned by platform).
-4. Persistent disk (optional): Mount a volume to persist `ajaia_docs.db`.
+   *(or `python backend/app.py`)*
+3. **Environment Variables**:
+   - `PORT=10000` (assigned automatically by Render)
+   - `FLASK_DEBUG=0` (disables debug mode and auto-reloader in production)
+
+> [!NOTE]
+> **Data Persistence on Render Free Tier:**  
+> Render Free web services operate on ephemeral container disks. SQLite changes persist throughout active usage and across browser sessions while the container is running. However, container redeploys or spin-downs reset the local SQLite file unless backed by a paid Render Persistent Disk or migrated to a managed cloud database (e.g., Neon / Supabase PostgreSQL).
 
 ### Option 2: Docker Container
 ```dockerfile

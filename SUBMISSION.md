@@ -24,10 +24,15 @@
 
 ## 2. Live & Local Application Access
 
-- **Local Development URL**: `http://localhost:5173` (Vite dev server)
+- **Public Production Deployment URL**: [https://ajaia-docs-qwnj.onrender.com](https://ajaia-docs-qwnj.onrender.com)
+- **Public API Health Check**: [https://ajaia-docs-qwnj.onrender.com/api/health](https://ajaia-docs-qwnj.onrender.com/api/health)
+- **GitHub Repository**: [https://github.com/faizankhatib-ctrl/ajaia-docs](https://github.com/faizankhatib-ctrl/ajaia-docs)
 - **Local Single-Port Production URL**: `http://localhost:5000` (Flask serving backend + built frontend)
-- **Backend API Health Check**: `http://localhost:5000/api/health`
-- **Repository Location**: Workspace Root `d:\Ajaia LLC`
+- **Local Development URL**: `http://localhost:5173` (Vite dev server)
+
+> [!NOTE]
+> **Hosting & Storage Persistence Disclosure:**
+> The current production deployment is hosted on Render's Free tier using SQLite. While all document edits, autosave, permissions, and file imports persist across user sessions and browser reloads during active container operation, Render Free tier instances use an **ephemeral disk**. Data does not persist across container redeployments or cold spin-downs unless backed by a persistent Render Disk or migrated to managed cloud PostgreSQL.
 
 ---
 

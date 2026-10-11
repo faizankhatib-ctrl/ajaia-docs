@@ -1,0 +1,16 @@
+# AJAIA DOCS — VIDEO WALKTHROUGH LINK
+
+[WALKTHROUGH VIDEO PLACEHOLDER]
+URL: https://www.loom.com/share/placeholder-ajaia-docs-walkthrough-demo
+
+STATUS:
+This is a clearly marked placeholder as specified in the assignment requirements.
+The applicant will record the brief walkthrough demonstration video showing:
+1. Creating, editing, and formatting a document (TipTap editor controls).
+2. Autosave indicator transitioning from "Saving..." to "Saved to cloud".
+3. File import of Markdown (.md) and plain text (.txt) sample documents.
+4. User switching between Alice Morgan and Bob Chen.
+5. Sharing a document with Bob Chen and verifying it appears under "Shared with Me".
+6. Demonstrating backend access control rejection when attempting unauthorized edits.
+
+Once recorded, replace the placeholder URL above with the final public Loom/YouTube link before final submission.

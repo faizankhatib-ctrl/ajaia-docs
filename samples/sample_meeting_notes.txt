@@ -1,0 +1,13 @@
+Weekly Engineering Standup Notes
+Date: October 11, 2026
+Attendees: Alice Morgan, Bob Chen, Charlie Davis
+
+Agenda:
+1. Review AI-Native Full Stack Developer Assignment progress
+2. Test document autosave and sharing workflows
+3. Validate access control enforcement
+
+Action Items:
+- Alice to verify SQLite schema migrations and demo accounts
+- Bob to test collaboration editing and sharing modal
+- Charlie to perform automated regression test suite run
